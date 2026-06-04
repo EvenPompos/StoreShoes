@@ -1,0 +1,75 @@
+﻿<Window x:Class="StoreShoes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StoreShoes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Loaded="Window_Loaded"
+        Icon="/Images/Icon.JPG"
+        WindowStartupLocation="CenterScreen" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="110"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="150"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Column="0" Grid.Row="0" Source="/Images/Icon.png" ></Image>
+            <Grid Grid.Row="1">
+                <StackPanel>
+                    <Button x:Name="Catalogbut"
+                            Content="Список товаров"
+                            Margin="5"
+                            Click="Catalogbut_Click"
+                            Height="45"
+                            Background="#7FFF00"></Button>
+                    <Button x:Name="Tovarbut"
+                            Content="Товары"
+                            Margin="5"
+                            Click="Tovarbut_Click"
+                            Height="45"
+                            Background="#7FFF00"></Button>
+                    <Button x:Name="Orderbut"
+                            Content="Заказы"
+                            Margin="5"
+                            Click="Orderbut_Click"
+                            Height="45"
+                            Background="#7FFF00"></Button>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="2">
+                <StackPanel>
+                    <Button x:Name="GoBackbut"
+                            Content="Назад"
+                            Margin="5"
+                            Click="GoBackbut_Click"
+                            Height="45"
+                            Background="#00FA9A"></Button>
+                    <Button x:Name="Exitbut"
+                            Content="Выход"
+                            Margin="5"
+                            Click="Exitbut_Click"
+                            Height="45"
+                            Background="#00FA9A"></Button>
+                </StackPanel>
+            </Grid>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Background="#00FA9A">
+                <TextBlock x:Name="txtFIO" HorizontalAlignment="Right" Margin="5" 
+                           FontSize="18"></TextBlock>
+            </Grid>
+            <Frame Grid.Row="1" x:Name="MainFrame"></Frame>
+        </Grid>
+    </Grid>
+</Window>

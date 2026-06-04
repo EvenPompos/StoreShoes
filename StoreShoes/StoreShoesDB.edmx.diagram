@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="89d75f3f02ff407691669adf5cdaf234" Name="Diagram1">
+        <EntityTypeShape EntityType="StoreShoesModel.Categories" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreShoesModel.Manufactures" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreShoesModel.OrderItems" Width="1.5" PointX="5.25" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreShoesModel.Orders" Width="1.5" PointX="3" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreShoesModel.OrderStatuses" Width="1.5" PointX="0.75" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreShoesModel.PointVudachies" Width="1.5" PointX="0.75" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreShoesModel.Postavshikes" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreShoesModel.Roles" Width="1.5" PointX="1.5" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreShoesModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreShoesModel.TovarNames" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreShoesModel.Tovars" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreShoesModel.Users" Width="1.5" PointX="0.75" PointY="17.75" IsExpanded="true" />
+        <AssociationConnector Association="StoreShoesModel.FK__Tovars__Categori__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreShoesModel.FK__Tovars__Manufact__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreShoesModel.FK__OrderItem__Order__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreShoesModel.FK__OrderItem__Tovar__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreShoesModel.FK__Orders__ClientID__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreShoesModel.FK__Orders__OrderSta__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreShoesModel.FK__Orders__PointVud__5DCAEF64" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreShoesModel.FK__Tovars__Images__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreShoesModel.FK__Users__RolesID__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreShoesModel.FK_Tovars_TovarNames" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

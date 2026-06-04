@@ -1,0 +1,27 @@
+﻿<Page x:Class="StoreShoes.Views.OrderPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Заказы" Loaded="Page_Loaded">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Список заказов" FontSize="24" FontWeight="Bold" Margin="0,0,0,10"/>
+
+        <DataGrid x:Name="dgOrders" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" MouseDoubleClick="dgOrders_MouseDoubleClick">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Код заказа" Binding="{Binding Code}"/>
+                <DataGridTextColumn Header="Дата заказа" Binding="{Binding DateOrders, StringFormat=\{0:dd.MM.yyyy\}}"/>
+                <DataGridTextColumn Header="Дата выдачи" Binding="{Binding DateDelivery, StringFormat=\{0:dd.MM.yyyy\}}"/>
+                <DataGridTextColumn Header="Статус" Binding="{Binding OrderStatuses.OrderStatusesName}"/>
+                <DataGridTextColumn Header="Пункт выдачи" Binding="{Binding PointVudachies.PointVudachiesName}"/>
+                <DataGridTextColumn Header="Клиент" Binding="{Binding Users.FIO}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button x:Name="btnAddOrder" Grid.Row="2" Content="Добавить заказ" Width="200" Height="40" Margin="0,10,0,0" HorizontalAlignment="Right" Click="btnAddOrder_Click" Visibility="Collapsed"/>
+    </Grid>
+</Page>
